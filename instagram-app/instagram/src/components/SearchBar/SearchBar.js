@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import * as Icon from 'react-feather';
+import * as Icon from 'react-feather';
 
 const Search = styled.div`
 border-bottom: 1px solid #3333;
@@ -37,18 +37,18 @@ const NavSearch = styled.div`
 const SearchBar = props => {
     return (
         <Search className='searchBar'>
-            {/* <Icon.Instagram /> */}
+            <Icon.Instagram />
             <div className='instagram'>
                 <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png' alt='instagram' />
             </div>
             <NavSearch className='bar'>
                 <Input type='test' className='search-input' placeholder='Search' />
             </NavSearch>
-            {/* <Nav>
+            <Nav>
                 <Icon.Compass />
                 <Icon.Heart />
                 <Icon.MessageCircle />
-            </Nav> */}
+            </Nav>
         </Search>
     )
 }

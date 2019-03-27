@@ -11,7 +11,6 @@ height:30px;
 const UserInfoH3 = styled.h3`
 font-size: 17px;
 margin-left: 10px;
-
 `;
 
 const UserInfoImg = styled.img`
@@ -49,7 +48,5 @@ const Post = props => {
         </div>
     )
 }
-
-
 
 export default Post;

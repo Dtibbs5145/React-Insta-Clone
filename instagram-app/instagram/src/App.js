@@ -44,7 +44,7 @@ logOut = e => {
   render() {
     return (
       <div className="App">
-        <SearchBar searchPosts={this.searchBarHandler}/> */}
+        <SearchBar searchPosts={this.searchBarHandler}/>
         <PostContainer 
         postData={
           this.state.searchData.length > 0 ?
