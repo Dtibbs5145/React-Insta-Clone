@@ -1,9 +1,25 @@
 import React from 'react';
-import './CommentSection.css';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import * as Icon from 'react-feather';
 
+const User = styled.div`
+    font-weight: 500;
+    font-size: 14px;
+`;
+
+const Comment = styled.div`
+    display: flex;
+    justify-content: ;
+`;
+
+const Text = styled.p`
+    text-align: left;
+`;
+
+const AddComment = styled.input`
+width: 550px;
+height: 35px;
+`;
 
 class CommentSection extends React.Component {
     constructor(props) {

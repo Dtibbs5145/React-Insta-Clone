@@ -1,5 +1,4 @@
 import React from 'react';
-import dummyData from './dummy-data';
 import styled from 'styled-components';
 
 const CommentText = styled.input`

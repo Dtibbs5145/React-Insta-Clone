@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../SearchBar.css';
 import styled from 'styled-components';
 import * as Icon from 'react-feather';
 
@@ -11,6 +10,7 @@ display: flex;
 justify-content: space-between;
 background: #ffffff;
 `;
+
 
 const Nav = styled.div`
     margin-top: 8px;
@@ -41,7 +41,6 @@ const SearchBar = props => {
             <div className='instagram'>
                 <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png' alt='instagram' />
             </div>
-
             <NavSearch className='bar'>
                 <Input type='test' className='search-input' placeholder='Search' />
             </NavSearch>
