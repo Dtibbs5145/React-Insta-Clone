@@ -27,7 +27,8 @@ class CommentSection extends React.Component {
         this.state = {
             comments: props.comments,
             likes: props.likes,
-            comment: ''
+            comment: '',
+            username: props.username,
         };
     };
 
@@ -73,6 +74,8 @@ class CommentSection extends React.Component {
                         onChange={this.changeHandler}
                         value={this.state.comment}
                     />
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
                 </form>
             </User>
         );

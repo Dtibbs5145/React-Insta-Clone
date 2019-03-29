@@ -4,7 +4,16 @@ import dummyData from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar';
 import PostContainer from './components/PostContainer/PostContainer';
 import Authenticate from './components/CommentSection/Authentication/Authenticate';
+import styled from 'styled-components';
 
+const AppWrapper = styled.div`
+width: 100%;
+text-align: center;
+content-align: center;
+margin: auto;
+background: lightgrey;
+padding-top: 60px;
+`;
 
 class App extends React.Component {
   constructor() {
@@ -43,7 +52,7 @@ logOut = e => {
 
   render() {
     return (
-      <div className="App">
+      <AppWrapper className="App">
         <SearchBar searchPosts={this.searchBarHandler}/>
         <PostContainer 
         postData={
@@ -52,9 +61,9 @@ logOut = e => {
           this.state.dummyData}
           />
         <Authenticate />
-      </div>
+      </AppWrapper>
     );
   }
 }
 
-export default App;
+export default (Authenticate(App));
